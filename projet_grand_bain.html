@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier sur mer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -24,16 +25,22 @@
           <a href="./directionartistique.html">Direction artistique</a>
         </li>
         <li class="menu__lien"><a>Objets</a></li>
-        <li class="menu__lien"><a>À propos</a></li>
+        <li class="menu__lien"><a href="./a_propos.html">À propos</a></li>
       </ul>
     </header>
     <main class="content">
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Le grand bain/image_1.jpg"
         alt="Le Grand Bain, Plongez dans la tech"
       />
-      <section class="section_summary">
+      <section
+        class="section_summary"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h1 class="section_summary__title">Le Grand Bain, by la French Tech</h1>
         <span class="section_summary__date">2020</span>
         <p class="section_summary__description">
@@ -49,35 +56,64 @@
           page de la brève communale du parti écologiste élu en 2020 à
           Chalo-saint-Mars.
         </p>
+        <img
+          class="projet_picto"
+          src="./sources/Pictos/picto_identite_visuelle.svg"
+          alt="Picto identité visuelle"
+        />
+        <p class="section_summary__work">Identité Visuelle</p>
       </section>
+      <div class="frame_for_landscape">
+        <img
+          class="project_picture"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          src="sources/images_projets/Le grand bain/image_2.png"
+          alt=""
+        />
+        <img
+          class="animation_landscape"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          src="sources/images_projets/Le grand bain/image_2bis.png"
+          alt="Paysage"
+        />
+      </div>
       <img
-        class="project_picture"
-        src="sources/images_projets/Le grand bain/image_2.png"
-        alt=""
-      />
-      <img
-        class="project_picture"
+        class="project_picture__front"
         src="sources/images_projets/Le grand bain/image_3.jpg"
         alt=""
       />
+      <div class="animation-frame">
+        <img
+          class="project_picture_absolute"
+          src="sources/images_projets/Le grand bain/image_4.1.jpg"
+          alt=""
+        />
+        <div class="swim_frame">
+          <img
+            class="project_picture_absolute2"
+            src="sources/images_projets/Le grand bain/image_4.2.png"
+            alt=""
+          />
+          <img
+            class="project_picture_absolute3"
+            src="sources/images_projets/Le grand bain/image_4.3.png"
+            alt=""
+          />
+        </div>
+      </div>
+
       <img
         class="project_picture"
-        src="sources/images_projets/Le grand bain/image_4.1.jpg"
-        alt=""
-      />
-      <img
-        class="project_picture"
-        src="sources/images_projets/Le grand bain/image_4.2.jpg"
-        alt=""
-      />
-      <img
-        class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Le grand bain/image_5.jpg"
         alt=""
       />
       <img
         class="project_picture"
-        src="sources/images_projets/Le grand bain/image_6.2.jpg"
+        src="sources/images_projets/Le grand bain/image_6.2.png"
         alt=""
       />
       <img
@@ -90,5 +126,9 @@
     <footer class="footer"></footer>
     <script src="./scripts/pastilles.js"></script>
     <script src="./scripts/intersection_observer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

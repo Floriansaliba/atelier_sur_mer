@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier sur mer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -24,17 +25,23 @@
           <a href="./directionartistique.html">Direction artistique</a>
         </li>
         <li class="menu__lien"><a>Objets</a></li>
-        <li class="menu__lien"><a>À propos</a></li>
+        <li class="menu__lien"><a href="./a_propos.html">À propos</a></li>
       </ul>
     </header>
     <main class="content">
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Fruit & food/image_1.jpg"
         alt="Brève écologiste, Chalot-saint-Mars"
       />
-      <section class="section_summary">
-        <h1 class="section_summary__title">Fruit and food</h1>
+      <section
+        class="section_summary"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        <h1 class="section_summary__title">Fruit and food 🍒</h1>
         <span class="section_summary__date">2020</span>
         <p class="section_summary__description">
           Fruit and Food c’est une super application anti-gaspi qui vous permet
@@ -44,41 +51,67 @@
           légumes des jardiniers amateurs! Ainsi on mange de délicieux fruits et
           légumes de saison tout ça en circuit court !
         </p>
+        <img
+          class="projet_picto"
+          src="./sources/Pictos/picto_UI.svg"
+          alt="Picto identité visuelle"
+        />
+        <p class="section_summary__work">UI Design</p>
       </section>
-      <img
-        class="project_picture"
-        src="sources/images_projets/Fruit & food/image_2.jpg"
-        alt=""
-      />
-      <video
-        class="project-video"
-        src="sources/images_projets/Fruit & food/image_3_vidéo.mp4"
-        controls
-      ></video>
-      <img
-        class="project_picture"
-        src="sources/images_projets/Fruit & food/image_4.png"
-        alt=""
-      />
-      <img
-        class="project_picture"
-        src="sources/images_projets/Fruit & food/image_5.jpg"
-        alt=""
-      />
-      <img
-        class="project_picture"
-        src="sources/images_projets/Fruit & food/image_6.jpg"
-        alt=""
-      />
-      <img
-        class="project_picture"
-        src="sources/images_projets/Fruit & food/image_7.jpg"
-        alt=""
-      />
+      <div class="picture_frame" data-aos="fade-left" data-aos-duration="2000">
+        <img
+          class="project_picture__with_frame"
+          src="sources/images_projets/Fruit & food/image_2.jpg"
+          alt=""
+        />
+      </div>
+      <div class="picture_frame" data-aos="fade-right" data-aos-duration="2000">
+        <video
+          class="project_video__with_frame"
+          src="sources/images_projets/Fruit & food/image_3_vidéo.mp4"
+          controls
+        ></video>
+      </div>
+      <div class="picture_frame" data-aos="fade-left" data-aos-duration="2000">
+        <img
+          class="project_picture__with_frame"
+          src="sources/images_projets/Fruit & food/image_4.png"
+          alt=""
+        />
+      </div>
+      <div class="picture_frame__doublepics" data-aos-duration="2000">
+        <div class="frame-left" data-aos="fade-right">
+          <img
+            class="project_picture"
+            data-aos-duration="2000"
+            src="sources/images_projets/Fruit & food/image_5.jpg"
+            alt=""
+          />
+        </div>
+        <div class="frame-right" data-aos="fade-left">
+          <img
+            class="project_picture__left"
+            data-aos-duration="2000"
+            src="sources/images_projets/Fruit & food/image_6.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="picture_frame" data-aos="fade-right" data-aos-duration="2000">
+        <img
+          class="project_picture__with_frame"
+          src="sources/images_projets/Fruit & food/image_7.jpg"
+          alt=""
+        />
+      </div>
     </main>
 
     <footer class="footer"></footer>
     <script src="./scripts/pastilles.js"></script>
     <script src="./scripts/intersection_observer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
