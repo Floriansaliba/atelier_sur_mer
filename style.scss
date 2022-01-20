@@ -584,3 +584,34 @@ a {
     padding-right: 20px;
   }
 }
+
+.photograph-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  &__text {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: start;
+    padding-left: 20px;
+  }
+}
+
+.frame-terre-hugo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+  &__pic {
+    width: 600px;
+  }
+  &__text {
+    padding-left: 20px;
+    font-size: 10px;
+    margin: 0px;
+  }
+}

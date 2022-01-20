@@ -838,4 +838,56 @@ a {
   text-align: end;
   padding-right: 20px;
 }
+
+.photograph-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.photograph-left__text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.frame-terre-hugo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px;
+}
+
+.frame-terre-hugo__pic {
+  width: 600px;
+}
+
+.frame-terre-hugo__text {
+  padding-left: 20px;
+  font-size: 10px;
+  margin: 0px;
+}
 /*# sourceMappingURL=style.css.map */
