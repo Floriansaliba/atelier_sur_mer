@@ -213,6 +213,13 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  &__simple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .textfooter {
@@ -648,4 +655,10 @@ a {
     font-size: 10px;
     margin: 0px;
   }
+}
+
+.image_footer {
+  width: 95%;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
