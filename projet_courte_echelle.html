@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier sur mer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -30,10 +31,16 @@
     <main class="content">
       <img
         class="project_picture"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src="sources/images_projets/la courte échelle/Image_1.png"
         alt="Le Grand Bain, Plongez dans la tech"
       />
-      <section class="section_summary">
+      <section
+        class="section_summary"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <h1 class="section_summary__title">
           La courte échelle, by la French Tech ⚠️
         </h1>
@@ -57,6 +64,8 @@
       </section>
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/la courte échelle/image_2.png"
         alt=""
       />
@@ -71,5 +80,9 @@
     </footer>
     <script src="./scripts/pastilles.js"></script>
     <script src="./scripts/intersection_observer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

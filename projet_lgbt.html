@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier sur mer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -30,26 +31,36 @@
     <main class="content">
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/LGBT/poster1.jpg"
         alt="Le Grand Bain, Plongez dans la tech"
       />
       <img
         class="project_picture"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src="sources/images_projets/LGBT/poster2.png"
         alt=""
       />
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/LGBT/poster3.png"
         alt=""
       />
       <img
         class="project_picture"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src="sources/images_projets/LGBT/poster-vide.png"
         alt=""
       />
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/LGBT/totebag.jpg"
         alt=""
       />
@@ -64,5 +75,9 @@
     </footer>
     <script src="./scripts/pastilles.js"></script>
     <script src="./scripts/intersection_observer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

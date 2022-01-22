@@ -577,6 +577,13 @@ a {
   top: 60px;
 }
 
+.project_picture__centered {
+  width: 94%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 2;
+}
+
 .frame-left {
   width: 45%;
   height: 100%;
@@ -851,6 +858,44 @@ a {
   height: 885px;
 }
 
+.animation-frame-2 {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.animation-frame-3 {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 .project_picture_absolute {
   width: 310.99px;
   height: 465.573px;
@@ -858,18 +903,67 @@ a {
 }
 
 .project_picture_absolute2 {
-  position: relative;
-  top: -164px;
-  width: 100%;
-  z-index: 1;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  width: 677px;
+  z-index: 3;
 }
 
 .project_picture_absolute3 {
-  position: relative;
-  top: -164px;
-  right: 50px;
-  width: 100%;
+  position: absolute;
+  top: 237px;
+  right: -517px;
+  width: 2000px;
   z-index: 1;
+}
+
+.project_picture_absolute4 {
+  position: absolute;
+  top: 553px;
+  right: 308px;
+  width: 129px;
+  z-index: 1;
+}
+
+.project_picture_absolute5 {
+  position: absolute;
+  top: 440px;
+  right: 0px;
+  width: 500px;
+  z-index: 3;
+}
+
+.project_picture_absolute6 {
+  position: absolute;
+  top: -291px;
+  right: 65px;
+  width: 1033px;
+  z-index: 3;
+}
+
+.project_picture_absolute7 {
+  position: absolute;
+  top: -650px;
+  right: 294px;
+  width: 134px;
+  z-index: 1;
+}
+
+.project_picture_absolute8 {
+  position: absolute;
+  top: 249px;
+  right: -60px;
+  width: 606px;
+  z-index: 0;
+}
+
+.project_picture_absolute9 {
+  position: absolute;
+  bottom: -22px;
+  left: 0px;
+  width: 332px;
+  z-index: 2;
 }
 
 .swim_frame {

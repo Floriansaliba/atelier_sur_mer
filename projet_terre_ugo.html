@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier sur mer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -30,6 +31,8 @@
     <main class="content">
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-1.jpg"
         alt="Projet Terre Ugo"
       />
@@ -71,13 +74,19 @@
       </section>
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-2.jpg"
         alt=""
       />
       <div class="photograph-left">
         <p class="photograph-left__text">Photographie by Mathilde Langevin</p>
       </div>
-      <div class="frame-terre-hugo">
+      <div
+        class="frame-terre-hugo"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <img
           class="frame-terre-hugo__pic"
           src="sources/images_projets/Terre Ugo/image-3.jpg"
@@ -100,16 +109,22 @@
 
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-4.jpg"
         alt=""
       />
       <img
         class="project_picture"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-5.png"
         alt=""
       />
       <img
         class="project_picture"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-6.jpg"
         alt=""
       />
@@ -118,6 +133,8 @@
       </div>
       <img
         class="project_picture"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src="sources/images_projets/Terre Ugo/image-7.jpg"
         alt=""
       />
@@ -135,5 +152,9 @@
     </footer>
     <script src="./scripts/pastilles.js"></script>
     <script src="./scripts/intersection_observer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
